@@ -364,40 +364,40 @@ function Home() {
             <ProjectCard
               cardImage={calculatorwebsite}
               cardTitle="Calculator (2021)"
-              cardDescription="Book demo airlines ticket."
-              cartVisitLink="https://hetref.github.io/airline"
+              cardDescription="Calculator for your daily need."
+              cartVisitLink="https://hetref.github.io/calc.github.io/"
             />
           </div>
           <div className="project">
             <ProjectCard
               cardImage={clockwebsite}
-              cardTitle="Analog Clock (2020)"
-              cardDescription="Book demo airlines ticket."
-              cartVisitLink="https://hetref.github.io/airline"
+              cardTitle="Clock (2020)"
+              cardDescription="A beautiful analog clock."
+              cartVisitLink="https://hetref.github.io/clocky/"
             />
           </div>
           <div className="project">
             <ProjectCard
               cardImage={sourcecodewebsite}
-              cardTitle="Source Code Website (2020)"
-              cardDescription="Book demo airlines ticket."
-              cartVisitLink="https://hetref.github.io/airline"
+              cardTitle="Source Code (2020)"
+              cardDescription="A destination for all the source codes."
+              cartVisitLink="https://hetref.github.io/sourcecode/"
             />
           </div>
           <div className="project">
             <ProjectCard
               cardImage={stopwatchwebsite}
-              cardTitle="StopWatch (2020)"
-              cardDescription="Book demo airlines ticket."
-              cartVisitLink="https://hetref.github.io/airline"
+              cardTitle="Stop Watch (2020)"
+              cardDescription="Stopwatch which has all the functionality."
+              cartVisitLink="https://hetref.github.io/stopwatch/"
             />
           </div>
           <div className="project">
             <ProjectCard
               cardImage={tilewebsite}
               cardTitle="Tile Game (2020)"
-              cardDescription="Book demo airlines ticket."
-              cartVisitLink="https://hetref.github.io/airline"
+              cardDescription="A tiles game using plain javascript."
+              cartVisitLink="https://hetref.github.io/tilesgame/"
             />
           </div>
         </div>
