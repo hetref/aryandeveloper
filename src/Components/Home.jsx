@@ -26,6 +26,7 @@ function Home() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [contacted, setContacted] = useState(false);
 
   const today = new Date();
   const date = today.getDate();
@@ -148,8 +149,7 @@ function Home() {
 
   const contactsubmit = async (e) => {
     e.preventDefault();
-    console.log(fName, lName, companyName, email, phone, message);
-    console.log(month);
+    setContacted(true);
     if (
       (fName === "" || lName === "" || email === "" || phone == "",
       message == "")
@@ -492,8 +492,12 @@ function Home() {
               </div>
 
               <div id="submit_btn">
-                <button type="submit" onClick={contactsubmit}>
-                  Submit
+                <button
+                  type="submit"
+                  disabled={contacted}
+                  onClick={contactsubmit}
+                >
+                  {contacted ? "Contacted" : "Contact"}
                 </button>
               </div>
             </form>
