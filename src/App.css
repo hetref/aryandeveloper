@@ -1,0 +1,1378 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0ef6cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sitewrapper {
+  position: relative;
+  height: 100vh;
+}
+
+/* NAVBAR */
+
+#sitewrapper #nav {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+#sitewrapper #nav #navbar {
+  display: flex;
+  /* height: 90px; */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0ef6cc;
+  color: #1b2223;
+  border-top: 2.5px solid #ffffff;
+  padding: 0.6rem 2rem;
+}
+
+#sitewrapper #nav #navbar .links {
+  display: flex;
+}
+
+#sitewrapper #nav #navbar .link a {
+  color: #1b2223;
+  margin-right: 1rem;
+  text-decoration: none;
+  padding-bottom: 0;
+}
+
+#sitewrapper #nav #navbar #brand a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#sitewrapper #nav #navbar #brand a img {
+  height: 50px;
+}
+
+#sitewrapper #nav #navbar #brand a #heading {
+  color: #1b2223;
+}
+
+#sitewrapper #nav #navbar #nav_links .nav_link a {
+  box-shadow: inset 0 0 0 0 #1b2223;
+  color: #1b2223;
+  padding: 0.3rem 0.6rem;
+  transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  border-radius: 2.6px;
+}
+
+#sitewrapper #nav #navbar #nav_links .nav_link a:hover {
+  box-shadow: inset 100px 0 0 0 #1b2223;
+  color: white;
+  font-weight: bold;
+}
+
+#sitewrapper #nav #navbar #social_media_links .social_link a {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+}
+
+#sitewrapper #nav #navbar #social_media_links .social_link a:hover {
+  background-color: #ffffff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  padding-right: 1rem;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+#sitewrapper #nav #navbar #social_media_links .social_link a .icon {
+  font-size: 1.5rem;
+  /* transition: all .4s; */
+}
+
+#sitewrapper #nav #navbar #social_media_links .social_link a:hover .icon {
+  transform: translateY(3px);
+}
+
+#sitewrapper
+  #nav
+  #navbar
+  #social_media_links
+  .social_link
+  a#instagram_ic:hover {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 40% 117%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: #ffffff;
+}
+
+#sitewrapper #nav #navbar #social_media_links .social_link a#github_ic:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#sitewrapper #nav #navbar #social_media_links .social_link a#twitter_ic:hover {
+  background-color: #1d9bf0;
+  color: #ffffff;
+}
+
+#sitewrapper #nav #navbar #social_media_links .social_link a#whatsapp_ic:hover {
+  background-color: #1ad03f;
+  color: #ffffff;
+}
+
+#sitewrapper #nav #navbar #social_media_links .social_link a .innerbox {
+  display: none;
+  /* transition: all .4s; */
+}
+
+#sitewrapper #nav #navbar #social_media_links .social_link a:hover .innerbox {
+  display: block;
+  padding-left: 0.8rem;
+}
+
+#sitewrapper #nav #mobile_navbar {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* NAVBAR */
+
+/* HOME JS */
+#header_section {
+  color: #161b1c;
+  background-color: #0ef6cc;
+  padding: 4rem 4rem;
+}
+
+#header_section header #grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#header_section header #grid #header_text #header_heading {
+  margin-bottom: 1rem;
+}
+
+#header_section header #grid #header_text #header_heading div #header_hello {
+  font-size: 2.8rem;
+  /* font-family: 'Edu NSW ACT Foundation'; */
+  font-family: "Bebas Neue";
+  margin-bottom: -0.4rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#header_section header #grid #header_text #header_heading div #header_name {
+  font-size: 3.4rem;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#header_section
+  header
+  #grid
+  #header_text
+  #header_heading
+  div
+  #header_name
+  span {
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Bebas Neue";
+}
+
+#header_section header #grid #header_text #header_heading div span {
+  font-size: 2.6rem;
+}
+
+#header_section header #grid #header_text #header_category {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.8rem;
+}
+
+#header_section header #grid #header_text #header_description {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0.6px;
+}
+
+#header_section header #grid #header_text #header_aboutbtn {
+  margin-top: 2.6rem;
+}
+
+#header_section header #grid #header_text #header_aboutbtn a {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1b2223;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#header_section header #grid #header_text #header_aboutbtn a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.4s;
+}
+
+#header_section header #grid #header_img img {
+  background-color: #1b2223;
+  border-radius: 50%;
+  padding: 1.4rem;
+  width: 250px;
+}
+
+#about_me {
+  background-color: #ffffff;
+  padding: 4rem;
+}
+
+#about_me #about_grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#about_me #about_grid #about_text #about_name h1 {
+  font-size: 3.4rem;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  color: #1b2223;
+  font-weight: 400;
+}
+
+#about_me #about_grid #about_text #about_experience {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+#about_me #about_grid #about_text #about_description {
+  font-family: "Roboto", sans-serif;
+  /* font-weight: bold; */
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+#skills {
+  color: #161b1c;
+  background-color: #0ef6cc;
+  padding: 4rem 4rem;
+}
+
+#skills #skills_header h1 {
+  font-size: 3.4rem;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#skills #skills_skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: center; */
+  align-items: flex-start;
+}
+
+#skills #skills_skill #skills_technologies #skill_technlogy_text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.8rem;
+}
+
+#skills #skills_skill #skills_technologies #skills_technology_progress {
+  margin-left: 2rem;
+}
+
+#skills
+  #skills_skill
+  #skills_technologies
+  #skills_technology_progress
+  .technology_label {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0.4rem;
+}
+
+#skills
+  #skills_skill
+  #skills_technologies
+  #skills_technology_progress
+  .technology_label
+  .skill_progress_bar {
+  margin-top: 0.25rem;
+}
+
+#skills #skills_skill #skills_languages #skill_language_text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1.2rem;
+}
+
+#skills #skills_skill #skills_languages #skills_language_progress {
+  margin-left: 2rem;
+}
+
+#skills #skills_skill #skills_languages #skills_language_progress .skill_label {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0.4rem;
+}
+
+#skills
+  #skills_skill
+  #skills_languages
+  #skills_language_progress
+  .skill_label
+  .skill_progress_bar {
+  margin-top: 0.25rem;
+}
+
+#projects {
+  background-color: #ffffff;
+  padding: 4rem;
+}
+
+#projects #projects_heading h1 {
+  font-size: 3.4rem;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #1b2223;
+  font-weight: 400;
+}
+
+#projects #projects_body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-gap: 1rem; */
+  margin-top: 1rem;
+}
+
+#projects #projects_body .project {
+  margin-bottom: 1rem;
+  padding: 1.5rem 1.2rem;
+  background-color: #1b2223;
+  margin-right: 1rem;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+#projects #projects_body .project .card .card_img {
+  margin-bottom: 0.8rem;
+}
+
+#projects #projects_body .project .card .card_img img {
+  border-radius: 2px;
+}
+
+#projects #projects_body .project .card .card_text .card_title h1 {
+  font-size: 1.6rem;
+  font-family: "Bebas Neue";
+  font-weight: 100;
+  letter-spacing: 1.4px;
+}
+
+#projects #projects_body .project .card .card_text .card_description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+#projects #projects_body .project .card .card_text .card_visitbtn a {
+  background-color: #0ef6cc;
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  color: #1b2223;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+#projects #projects_body .project .card .card_text .card_visitbtn a:hover {
+  background-color: #ffffff;
+  transition: all 0.4s;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+}
+
+/* HOME JS */
+
+/* FOOTER JS */
+#footer {
+  background-color: #000000;
+  color: #0ef6cc;
+  padding: 4rem 4rem 6.5rem 4rem;
+  z-index: 0;
+}
+
+#footer #footer_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#footer #footer_grid #footer_pages #footer_pages_heading h1,
+#footer #footer_grid #footer_projects #footer_projects_heading h1,
+#footer #footer_grid #footer_certificates #footer_certificates_heading h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+#footer #footer_grid #footer_pages #footer_pages_links .link,
+#footer #footer_grid #footer_projects #footer_projects_links .link,
+#footer #footer_grid #footer_certificates #footer_certificates_links .link {
+  margin-bottom: 1rem;
+}
+
+#footer #footer_grid #footer_pages #footer_pages_links .link a,
+#footer #footer_grid #footer_projects #footer_projects_links .link a,
+#footer #footer_grid #footer_certificates #footer_certificates_links .link a {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.6rem;
+  transition: all 0.4s;
+}
+
+#footer #footer_grid #footer_pages #footer_pages_links .link a:hover,
+#footer #footer_grid #footer_projects #footer_projects_links .link a:hover,
+#footer
+  #footer_grid
+  #footer_certificates
+  #footer_certificates_links
+  .link
+  a:hover {
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+/* FOOTER JS */
+
+/* CONTACT JS */
+#contact {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #0ef6cc;
+  padding: 4rem 4rem;
+}
+
+#contact #contact_section #contact_section_header {
+  margin-bottom: 2.4rem;
+}
+
+#contact #contact_section #contact_section_header #contact_header_heading h1 {
+  font-size: 3.4rem;
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  color: #1b2223;
+  font-weight: 400;
+}
+
+#contact #contact_section #contact_section_header #contact_header_text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+}
+
+#contact #contact_section #contact_section_form {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: ; */
+}
+
+#contact #contact_section #contact_section_form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact #contact_section #contact_section_form form .twoinputs {
+  display: flex;
+  align-items: center;
+}
+
+#contact #contact_section #contact_section_form form .twoinputs input {
+  width: 170px;
+}
+
+#contact #contact_section #contact_section_form form .contact_input {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 1rem;
+  margin-right: 25px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  width: 396px;
+}
+
+#contact #contact_section #contact_section_form form input.contact_input:focus {
+  border: none;
+  outline: none;
+}
+
+#contact #contact_section #contact_section_form form textarea {
+  height: 100px;
+  resize: none;
+}
+
+#contact #contact_section #contact_section_form form #submit_btn button {
+  outline: none;
+  border: none;
+  background: #161b1c;
+  color: #0ef6cc;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#contact #contact_section #contact_section_form form #submit_btn button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#contact #contact_info {
+  background-color: #ffffff;
+  padding: 1.5rem 1.6rem;
+  border-radius: 3px;
+}
+
+#contact #contact_info .contact_info_heading h1 {
+  font-size: 1.6rem;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.2rem;
+}
+
+#contact #contact_info .contact_info_body {
+  margin-bottom: 1.4rem;
+}
+
+#contact #contact_info .contact_info_body a {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  color: #161b1c;
+}
+
+#contact #contact_info .contact_info_body a:hover {
+  text-decoration: underline;
+}
+
+#contact
+  #contact_info
+  #contact_info_socialmedia
+  .contact_info_body
+  .contact_socialmedia_link {
+  margin-bottom: 0.25rem;
+}
+
+/* CONTACT JS */
+
+/* #webwrapper {
+  padding-bottom: 8rem;
+} */
+
+/* For Navbar Bar */
+@media (max-width: 768px) {
+  #sitewrapper #nav #navbar {
+    display: none;
+  }
+
+  #sitewrapper #nav #mobile_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0ef6cc;
+    padding: 0.6rem 2rem;
+    height: 70px;
+    z-index: 111;
+  }
+
+  #sitewrapper #nav #mobile_navbar #mobile_leftbar a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sitewrapper #nav #mobile_navbar #mobile_leftbar a img {
+    height: 50px;
+  }
+
+  #sitewrapper #nav #mobile_navbar #mobile_leftbar a #heading h1 {
+    color: #1b2223;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  .mobile_links {
+    display: none;
+    background-color: #0ef6cc;
+    text-align: center;
+    padding: 16px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  input[type="checkbox"]:checked ~ .mobile_links {
+    display: block;
+    transform: translateY(-80px);
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  #sitewrapper
+    #nav
+    #mobile_navbar
+    #mobile_rightbar
+    .mobile_links
+    .mobile_nav_link {
+    padding: 0.6rem 0;
+  }
+
+  #sitewrapper
+    #nav
+    #mobile_navbar
+    #mobile_rightbar
+    .mobile_links
+    .mobile_nav_link
+    a {
+    text-decoration: none;
+    color: #1b2223;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    border-radius: 2.6px;
+    font-size: 1.1rem;
+  }
+
+  #projects #projects_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 1rem; */
+    margin-top: 1rem;
+  }
+
+  /* CONTACT JS */
+  #contact {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #0ef6cc;
+    padding: 4rem 2.5rem;
+  }
+
+  #contact #contact_section #contact_section_header {
+    margin-bottom: 2.4rem;
+  }
+
+  #contact #contact_section #contact_section_header #contact_header_heading h1 {
+    font-size: 3.4rem;
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    color: #1b2223;
+    font-weight: 400;
+  }
+
+  #contact #contact_section #contact_section_header #contact_header_text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.6px;
+  }
+
+  #contact #contact_section #contact_section_form form .twoinputs {
+    display: flex;
+    align-items: center;
+  }
+
+  #contact #contact_section #contact_section_form form .twoinputs input {
+    width: 160px;
+  }
+
+  #contact #contact_section #contact_section_form form .contact_input {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: 25px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.6px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    width: 370px;
+  }
+
+  #contact #contact_section #contact_section_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact
+    #contact_section
+    #contact_section_form
+    form
+    input.contact_input:focus {
+    border: none;
+    outline: none;
+  }
+
+  #contact #contact_section #contact_section_form form textarea {
+    height: 100px;
+    resize: none;
+  }
+
+  #contact #contact_section #contact_section_form form #submit_btn button {
+    outline: none;
+    border: none;
+    background: #161b1c;
+    color: #0ef6cc;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  #contact
+    #contact_section
+    #contact_section_form
+    form
+    #submit_btn
+    button:hover {
+    color: #0ef6cc;
+    background-color: #161b1c;
+  }
+
+  #contact #contact_info {
+    background-color: #ffffff;
+    padding: 1.5rem 1.6rem;
+    border-radius: 3px;
+  }
+
+  #contact #contact_info .contact_info_heading h1 {
+    font-size: 1.4rem;
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 0.1rem;
+  }
+
+  #contact #contact_info .contact_info_body {
+    margin-bottom: 1.2rem;
+  }
+
+  #contact #contact_info .contact_info_body a {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    color: #161b1c;
+  }
+
+  #contact #contact_info .contact_info_body a:hover {
+    text-decoration: none;
+  }
+
+  #contact
+    #contact_info
+    #contact_info_socialmedia
+    .contact_info_body
+    .contact_socialmedia_link {
+    margin-bottom: 0.25rem;
+  }
+
+  /* CONTACT JS */
+}
+
+/* For Navbar Bar */
+
+/* For Tablets */
+@media screen and (max-width: 740px) {
+  #header_section {
+    padding: 3.5rem 1rem;
+  }
+
+  #header_section header #grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #header_section header #grid #header_text #header_heading {
+    margin-bottom: 0rem;
+  }
+
+  #header_section header #grid #header_text #header_heading div #header_hello {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: -0.2rem;
+  }
+
+  #header_section header #grid #header_text #header_heading div #header_name {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+  }
+
+  #header_section
+    header
+    #grid
+    #header_text
+    #header_heading
+    div
+    #header_name
+    span {
+    font-size: 2.4rem;
+  }
+
+  #header_section header #grid #header_text #header_category {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    margin-top: 0.6rem;
+  }
+
+  #header_section header #grid #header_text #header_description {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.6px;
+  }
+
+  #header_section header #grid #header_text #header_aboutbtn {
+    margin-top: 2.4rem;
+  }
+
+  #header_section header #grid #header_text #header_aboutbtn a {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1b2223;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #header_section header #grid #header_text #header_aboutbtn a:hover {
+    background-color: #1b2223;
+    color: #ffffff;
+  }
+
+  #header_section header #grid #header_img img {
+    background-color: #1b2223;
+    border-radius: 50%;
+    padding: 1.4rem;
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  #about_me {
+    padding: 3.5rem 1rem;
+  }
+
+  #about_me #about_grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about_me #about_grid #about_img img {
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+
+  #about_me #about_grid #about_text #about_name h1 {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+  }
+
+  #about_me #about_grid #about_text #about_experience {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.6rem;
+  }
+
+  #about_me #about_grid #about_text #about_description {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
+    line-height: 1.4rem;
+  }
+
+  #skills {
+    padding: 3.5rem 1rem;
+  }
+
+  #skills #skills_header h1 {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+  }
+
+  #skills #skills_skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills #skills_skill #skills_technologies #skill_technlogy_text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0.8rem;
+  }
+
+  #skills #skills_skill #skills_technologies #skills_technology_progress {
+    margin-left: 3rem;
+  }
+
+  #skills
+    #skills_skill
+    #skills_technologies
+    #skills_technology_progress
+    .technology_label {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0.4rem;
+  }
+
+  #skills
+    #skills_skill
+    #skills_technologies
+    #skills_technology_progress
+    .technology_label
+    .skill_progress_bar {
+    margin-top: 0.1rem;
+  }
+
+  #skills #skills_skill #skills_languages #skill_language_text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1.2rem;
+  }
+
+  #skills #skills_skill #skills_languages #skills_language_progress {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  #skills
+    #skills_skill
+    #skills_languages
+    #skills_language_progress
+    .skill_label {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0.4rem;
+  }
+
+  #skills
+    #skills_skill
+    #skills_languages
+    #skills_language_progress
+    .skill_label
+    .skill_progress_bar {
+    margin-top: 0.1rem;
+  }
+
+  #projects {
+    padding: 3.5rem 1rem;
+  }
+
+  #projects #projects_heading h1 {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+  }
+
+  #projects #projects_body {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-gap: 1rem; */
+  }
+
+  #projects #projects_body .project .card .card_text .card_visitbtn a:hover {
+    background-color: #0ef6cc;
+    font-size: 1rem;
+    padding: 0.7rem 1.4rem;
+  }
+
+  /* FOOTER JS */
+  #footer {
+    padding: 3.5rem 1rem 6.5rem 1rem;
+  }
+
+  #footer #footer_grid {
+    grid-template-columns: 1fr;
+  }
+
+  #footer #footer_grid #footer_pages #footer_pages_heading h1,
+  #footer #footer_grid #footer_projects #footer_projects_heading h1,
+  #footer #footer_grid #footer_certificates #footer_certificates_heading h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  #footer #footer_grid #footer_pages #footer_pages_links .link,
+  #footer #footer_grid #footer_projects #footer_projects_links .link,
+  #footer #footer_grid #footer_certificates #footer_certificates_links .link {
+    margin-bottom: 0.6rem;
+  }
+
+  #footer #footer_grid #footer_pages #footer_pages_links .link a,
+  #footer #footer_grid #footer_projects #footer_projects_links .link a,
+  #footer #footer_grid #footer_certificates #footer_certificates_links .link a {
+    padding: 0.3rem 0.6rem;
+    /* font-weight: bold; */
+  }
+
+  #footer #footer_grid #footer_pages #footer_pages_links .link a:hover,
+  #footer #footer_grid #footer_projects #footer_projects_links .link a:hover,
+  #footer
+    #footer_grid
+    #footer_certificates
+    #footer_certificates_links
+    .link
+    a:hover {
+    color: #ffffff;
+    font-weight: normal;
+    background-color: #000000;
+    border-radius: 2px;
+  }
+
+  /* FOOTER JS */
+
+  /* CONTACT JS */
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #0ef6cc;
+    padding: 3.5rem 1rem;
+  }
+
+  #contact #contact_section {
+    margin-bottom: 2rem;
+  }
+
+  #contact #contact_section #contact_section_header {
+    margin-bottom: 2.4rem;
+  }
+
+  #contact #contact_section #contact_section_header #contact_header_heading h1 {
+    font-size: 2.4rem;
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    color: #1b2223;
+    font-weight: 400;
+  }
+
+  #contact #contact_section #contact_section_header #contact_header_text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.6px;
+  }
+
+  #contact #contact_section #contact_section_form form .twoinputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #contact #contact_section #contact_section_form form .twoinputs input {
+    width: 240px;
+  }
+
+  #contact #contact_section #contact_section_form form .contact_input {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem 1rem;
+    margin-right: 25px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.6px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    width: 240px;
+  }
+
+  #contact
+    #contact_section
+    #contact_section_form
+    form
+    input.contact_input:focus {
+    border: none;
+    outline: none;
+  }
+
+  #contact #contact_section #contact_section_form form textarea {
+    height: 100px;
+    resize: none;
+  }
+
+  #contact #contact_section #contact_section_form form #submit_btn button {
+    outline: none;
+    border: none;
+    background: #161b1c;
+    color: #0ef6cc;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  #contact
+    #contact_section
+    #contact_section_form
+    form
+    #submit_btn
+    button:hover {
+    color: #0ef6cc;
+    background-color: #161b1c;
+  }
+
+  #contact #contact_info {
+    background-color: #ffffff;
+    padding: 1rem 0.8rem;
+    border-radius: 3px;
+  }
+
+  #contact #contact_info .contact_info_heading h1 {
+    font-size: 1.6rem;
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.2rem;
+  }
+
+  #contact #contact_info .contact_info_body {
+    margin-bottom: 1.4rem;
+  }
+
+  #contact #contact_info .contact_info_body a {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    color: #161b1c;
+  }
+
+  #contact #contact_info .contact_info_body a:hover {
+    text-decoration: none;
+  }
+
+  #contact
+    #contact_info
+    #contact_info_socialmedia
+    .contact_info_body
+    .contact_socialmedia_link {
+    margin-bottom: 0.25rem;
+  }
+
+  /* CONTACT JS */
+}
+
+/* For Tablets */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #03a9f4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03a9f4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
